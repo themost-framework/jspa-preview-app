@@ -1,0 +1,31 @@
+{
+    "settings": {
+        "jspa": {
+            "imports": [
+                "./models/index"
+            ]
+        },
+        "schema": {
+            "loaders": {
+                "loaderType": "@themost/jspa/platform-server#DefaultEntityLoaderStrategy"
+            }
+        }
+    },
+    "adapterTypes": [
+        {
+            "name": "Sqlite Data Adapter",
+            "invariantName": "sqlite",
+            "type": "@themost/sqlite"
+        }
+    ],
+    "adapters": [
+        {
+            "name": "test",
+            "invariantName": "sqlite",
+            "default": true,
+            "options": {
+                "database": "db/local.db"
+            }
+        }
+    ]
+}

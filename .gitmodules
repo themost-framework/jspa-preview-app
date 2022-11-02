@@ -1,0 +1,3 @@
+[submodule "modules/jspa"]
+	path = modules/jspa
+	url = https://github.com/themost-framework/jspa.git
